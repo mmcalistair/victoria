@@ -1,5 +1,7 @@
 # victoria
 
+[![Clojars Project](https://img.shields.io/clojars/v/victoria.svg)](https://clojars.org/victoria)
+
 FIXME: description
 
 ## Installation
