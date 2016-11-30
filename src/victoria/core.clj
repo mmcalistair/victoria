@@ -1,7 +1,8 @@
 (ns victoria.core
-  (:gen-class))
+  (:gen-class)
+  (:require [clojure.data.json :as json]))
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn load-configuration [path-to-configuration]
+  (let [config (slurp path-to-configuration)]
+    (json/read-json config true)))
+
